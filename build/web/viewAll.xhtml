@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Students Entries</title>
+        
+        
+        
+    </h:head>
+    <h:body>
+
+        <h:dataTable value="#{studentsObj.seeAll()}" var="student">
+            
+            <h:column>
+                <f:facet name="header">Name</f:facet>
+                #{student.name}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">RollNo</f:facet>
+                #{student.rollNo}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Mark1</f:facet>
+                #{student.mark1}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Mark2</f:facet>
+                #{student.mark2}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Mark3</f:facet>
+                #{student.mark3}
+            </h:column>
+            
+            
+        </h:dataTable>
+        
+        
+        
+    </h:body>
+</html>
+
